@@ -29,8 +29,13 @@ The notebook is structured as follows:
 This project explores vegetable image classification using three different approaches:
 
 1.  **Custom CNN Model (TensorFlow):** A simple Convolutional Neural Network built from scratch using TensorFlow. The architecture consists of several convolutional layers with ReLU activation and batch normalization, followed by max pooling layers. The flattened output is then passed through dense layers with L2 regularization and dropout for classification.
+[vegetable_model_128x128.keras](https://drive.google.com/file/d/1vdGyQ3s_eoVqVJLPGxTltp8Elzk3iPxM/view?usp=drive_link)
+
 2.  **ResNet50 (TensorFlow):** This approach utilizes the pre-trained ResNet50 model from Keras Applications for transfer learning. The convolutional base of ResNet50 is used, and new dense layers are added on top for classification. The layers of the ResNet50 model are trained to fine-tune the model for this specific dataset.
+[vegetable_model_resnet_tf_128x128.keras](https://drive.google.com/file/d/1G6OYNGDlA5BLVYEJwa9d2PuTA58Dd8N6/view?usp=drive_link)
+
 3.  **ResNet50 (PyTorch):** This implementation uses the pre-trained ResNet50 model available in PyTorch's `torchvision.models`. Similar to the TensorFlow transfer learning approach, the final fully connected layer is replaced to match the number of vegetable classes. The model is then trained on the dataset using PyTorch's training loop.
+[vegetable_model_resnet_pytorch_128x128.pth](https://drive.google.com/file/d/19uei-97HAPbtCYClBFsJmaKy_a_YUKLo/view?usp=drive_link)
 
 ## Getting Started
 
